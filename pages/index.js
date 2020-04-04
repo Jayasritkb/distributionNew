@@ -3,6 +3,7 @@ import distribution from '../ethereum/distribution.js';
 import web3js from '../ethereum/web3.js';
 import Layout from '../components/Layout.js';
 
+
 class DistributionIndex extends Component{
 static async getInitialProps(){
   const week = await distribution.methods.getWeekValue().call();
